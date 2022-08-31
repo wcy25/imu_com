@@ -1,0 +1,2 @@
+
+-G Ninja -DCATKIN_DEVEL_PREFIX=/home/wcy/catkin_ws/src/imu_com/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/wcy/catkin_ws/src/imu_com/install_isolated

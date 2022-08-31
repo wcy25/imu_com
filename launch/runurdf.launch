@@ -1,0 +1,3 @@
+<launch>
+	<param name="robot_description" textfile="$(find imu_com)/urdf/myrobot.urdf" />
+</launch>

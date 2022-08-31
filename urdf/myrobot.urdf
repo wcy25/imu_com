@@ -1,0 +1,34 @@
+<robot name="myrobot">
+
+	<link name="base_footprint">	
+		<material name="gray">
+			<color rgba="0.2 0.2 0.2 1" />
+		</material>
+	</link>
+
+	
+
+	<!-- base_link -->
+	<link name="base_link"/>
+	<joint name="base_link_joint" type="fixed">
+		<origin xyz="0 0 0" rpy="0 0 0" />	
+		<parent link="base_footprint" />
+		<child link="base_link" />
+	</joint>
+
+	<!-- laser -->
+	<link name="laser"/>
+	<joint name="laser_joint" type="fixed">
+		<origin xyz="0 0 0" rpy="0 0 0" />	
+		<parent link="base_footprint" />
+		<child link="laser" />
+	</joint>
+
+	<!-- imu -->
+	<link name="imu_link"/>
+	<joint name="imu_link_joint" type="fixed">
+		<origin xyz="0 0 0" rpy="0 0 0" />	
+		<parent link="base_footprint" />
+		<child link="imu_link" />
+	</joint>
+</robot>

@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="imu_com" name="robot_state_pub" type="imu.py" output="screen">
+	</node>
+</launch>
